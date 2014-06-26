@@ -36,6 +36,13 @@ body
 	font-size: 14px 
 	font-family: Arial, sans-serif 
 	line-height: 1.4
+
+.title
+	border-bottom: 4px double $orange
+	font-size: 24px
+	color: $orange  
+	span
+		display: inline-block
 // Header
 // --------------------------------------------------
 .topper
@@ -156,7 +163,7 @@ body
 		padding: 3px 4px
 		height: 18px
 		border-radius: 13px
-		border: 1px solid #fa624d
+		border: 1px solid $orange
 	.search__btn
 		display: inline-block
 		vertical-align: middle
@@ -165,9 +172,9 @@ body
 	.search__input
 		font-size: 14px
 		line-height: 18px
-		color: #FA624D
+		color: $orange
 		+placeholder
-			color: #FA624D
+			color: $orange
 		&:focus
 			+placeholder
 				color: transparent
