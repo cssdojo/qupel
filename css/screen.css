@@ -26,7 +26,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 @font-face { font-family: Intro_book; src: url("../fonts/Intro_book.eot"); src: url("../fonts/Intro_book.eot?#iefix") format("embedded-opentype"), url("../fonts/Intro_book.woff") format("woff"), url("../fonts/Intro_book.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-.topper .topper__in, .navbar .navbar__in, .l, .contentindex .contentindex__in, .forus .forus__in { width: 960px; margin-left: auto; margin-right: auto; }
+.topper .topper__in, .navbar .navbar__in, .footer .footer__in, .l, .contentindex .contentindex__in, .forus .forus__in { width: 960px; margin-left: auto; margin-right: auto; }
 
 body { min-width: 960px; background: whitesmoke; font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 
@@ -124,7 +124,7 @@ body { min-width: 960px; background: whitesmoke; font-size: 14px; font-family: A
 .basket .basket__pricesumm { font-weight: bold; }
 .basket .basket__pricesumm sup { display: inline-block; margin-top: -2px; margin-left: 1px; vertical-align: top; }
 
-.contentindex { padding: 50px 0 70px; background: url(../img/pattern.jpg) repeat; }
+.contentindex { padding: 50px 0 110px; background: url(../img/pattern.jpg) repeat; }
 .contentindex .contentindex__in { position: relative; }
 .contentindex .contentindex__sidebar { width: 220px; position: absolute; bottom: 0; left: 0; }
 
@@ -168,12 +168,12 @@ body { min-width: 960px; background: whitesmoke; font-size: 14px; font-family: A
 .slist .slist__row { width: 100%; margin-left: -10px; display: table; }
 .slist ul { display: table-row; }
 .slist li { display: table-cell; width: 159px; border-left: 1px dotted orange; }
-.slist .slist__title { margin-bottom: 10px; padding: 0 9px; color: #24cf91; font-size: 18px; line-height: 1.2; font-family: "Intro_bold", arial, sans-serif; }
+.slist .slist__title { margin-bottom: 5px; padding: 0 9px; color: #24cf91; font-size: 18px; line-height: 1; font-family: "Intro_bold", arial, sans-serif; }
 .slist .slist__title a { color: #24cf91; font-size: 18px; line-height: 1.2; font-family: "Intro_bold", arial, sans-serif; text-decoration: none; }
 .slist .slist__title a:hover { text-decoration: underline; }
 .slist .slist__content { padding: 0 9px; font-size: 12px; color: #7b3801; }
 
-.forus { padding: 50px 0 35px; background: url(../img/forus_bg.jpg) repeat; position: relative; }
+.forus { padding: 55px 0 35px; background: url(../img/forus_bg.jpg) repeat; position: relative; }
 .forus:after, .forus:before { content: ""; height: 25px; position: absolute; left: 0; right: 0; }
 .forus:after { background: url(../img/shadow_t.png) repeat; top: 0; }
 .forus:before { background: url(../img/shadow_b.png) repeat; bottom: 0; }
@@ -181,3 +181,11 @@ body { min-width: 960px; background: whitesmoke; font-size: 14px; font-family: A
 .forus .forus__in:after { content: " "; display: table; clear: both; }
 .forus .forus__left { width: 460px; padding: 0 10px; float: left; }
 .forus .forus__right { width: 380px; padding: 0 10px; float: right; }
+.forus .forus__title { padding-bottom: 10px; margin-bottom: 16px; border-bottom: 4px double white; font-size: 24px; line-height: 1.2; color: white; font-family: "Intro_bold", arial, sans-serif; }
+.forus .forus__title span { display: inline-block; }
+.forus .forus__content { padding-bottom: 160px; font-size: 16px; line-height: 1.5; color: white; position: relative; }
+.forus .forus__content:after { content: ""; width: 381px; height: 165px; background: url("../img/quality_guarantee.png"); position: absolute; left: 0; bottom: 0; }
+.forus .forus__content p { margin-bottom: 24px; }
+
+.reviews .reviews__title { padding-bottom: 5px; margin-bottom: 16px; border-bottom: 4px double white; font-size: 24px; line-height: 1.2; color: white; font-family: "Intro_bold", arial, sans-serif; }
+.reviews .reviews__title span { margin-top: 34px; display: inline-block; }
