@@ -202,3 +202,12 @@ body { min-width: 960px; background: whitesmoke; font-size: 14px; font-family: A
 
 .reviews .reviews__title { padding-bottom: 5px; margin-bottom: 16px; border-bottom: 4px double white; font-size: 24px; line-height: 1.2; color: white; font-family: "Intro_bold", arial, sans-serif; }
 .reviews .reviews__title span { margin-top: 34px; display: inline-block; }
+.reviews .reviews__item { margin-top: 54px; *zoom: 1; }
+.reviews .reviews__item:after { content: " "; display: table; clear: both; }
+.reviews .reviews__itemleft { width: 140px; margin-right: 20px; float: left; text-align: center; }
+.reviews .reviews__itemmedia { width: 72px; height: 72px; margin-left: auto; margin-right: auto; margin-bottom: 4px; padding: 4px; background: white; border-radius: 50%; overflow: hidden; }
+.reviews .reviews__itemava { display: block; height: 100%; border-radius: 50%; }
+.reviews .reviews__itemsdescr { font-size: 12px; color: white; }
+.reviews .reviews__itemright { width: 220px; float: left; position: relative; bottom: 31px; }
+.reviews .reviews__comment { padding: 10px; background: white; border-radius: 3px 3px 3px 0; font-size: 12px; line-height: 1.5; color: #5f5e5e; position: relative; }
+.reviews .reviews__comment:after { content: ""; position: absolute; left: -20px; bottom: 0; width: 0px; height: 0px; border-style: solid; border-width: 0 0 14px 20px; border-color: transparent transparent white transparent; }
