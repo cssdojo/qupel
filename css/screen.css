@@ -139,12 +139,12 @@ body { min-width: 960px; background: whitesmoke; font-size: 14px; font-family: A
 
 .tab .tab__nav { border-radius: 5px 5px 0 0; overflow: hidden; *zoom: 1; }
 .tab .tab__nav:after { content: " "; display: table; clear: both; }
-.tab .tab__nav li { width: 50%; padding: 4px 0; float: left; background: #3678c2; text-align: center; }
+.tab .tab__nav li { width: 50%; float: left; background: #3678c2; text-align: center; }
 .tab .tab__nav li.is-active { position: relative; background: #fdf6ee; }
 .tab .tab__nav li.is-active a { color: #fe8300; }
-.tab .tab__nav li.is-active .tab__link1:after { content: ""; width: 10px; height: 28px; background: url(../img/tab_border1.png); position: absolute; top: 0; right: 0; }
-.tab .tab__nav li.is-active .tab__link2:after { content: ""; width: 10px; height: 28px; background: url(../img/tab_border2.png); position: absolute; top: 0; left: 0; }
-.tab .tab__link { font-size: 12px; text-decoration: none; color: white; font-family: "Intro_bold", arial, sans-serif; }
+.tab .tab__nav li.is-active .tab__link1:after { content: ""; width: 10px; height: 28px; background: url(../img/tab_border1.png); position: absolute; top: 0; right: -5px; }
+.tab .tab__nav li.is-active .tab__link2:after { content: ""; width: 10px; height: 28px; background: url(../img/tab_border2.png); position: absolute; top: 0; left: -5px; }
+.tab .tab__link { display: block; padding: 4px 0; font-size: 12px; text-decoration: none; color: white; font-family: "Intro_bold", arial, sans-serif; }
 .tab .tab__content { padding: 12px; background: #fdf6ee; border-radius: 0 0 5px 5px; }
 .tab .tab__content img { display: block; }
 
