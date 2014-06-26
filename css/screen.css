@@ -139,7 +139,7 @@ body { min-width: 960px; background: whitesmoke; font-size: 14px; font-family: A
 
 .contentindex { padding: 50px 0 110px; background: url(../img/pattern.jpg) repeat; }
 .contentindex .contentindex__in { position: relative; }
-.contentindex .contentindex__sidebar { width: 220px; position: absolute; bottom: 0; left: 0; }
+.contentindex .contentindex__sidebar { width: 220px; }
 
 .list { margin-bottom: 40px; }
 .list .list__meta { margin-bottom: 5px; font-size: 18px; color: #453e3e; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.99); }
