@@ -3,29 +3,181 @@
 
 // Fonts
 // --------------------------------------------------
++font(Intro, Intro)
+=i
+	font-family: "Intro", arial, sans-serif
 
-// Variables & mixins & extend
++font(Intro_bold, Intro_bold)
+=ib
+	font-family: "Intro_bold", arial, sans-serif
+	
++font(Intro_boldCaps, Intro_boldCaps)
+=ibc
+	font-family: "Intro_boldCaps", arial, sans-serif
+
++font(Intro_book, Intro_book)
+=ibook
+	font-family: "Intro_book", arial, sans-serif
+// var
 // --------------------------------------------------
-// $color-red: red
-// $color-blue: blue
+$gray: #7b3801
+$green: #24cf91
+$orange: #fa624d
 
-// etc
-
+%in
+	width: 960px
+	margin-left: auto
+	margin-right: auto
 // Common blocks
 // --------------------------------------------------
 body
+	min-width: 960px
+	background: #F5F5F5 
 	font-size: 14px 
 	font-family: Arial, sans-serif 
 	line-height: 1.4
-
-// Headings
-// --------------------------------------------------
-
-// Nav
-// --------------------------------------------------
-
 // Header
 // --------------------------------------------------
+.topper
+	height: 89px
+	border-top: 1px solid #c2a588
+	background: url(../img/head_bg.jpg)
+	+cover
+	.topper__in
+		padding-top: 9px
+		overflow: hidden
+		@extend %in
+	.topper__content
+		width: 704px
+		padding: 0 10px
+		float: right
+		+clr
+	.topper__info
+		width: 460px
+		float: left
+	.topper__addr
+		width: 225px
+		float: right
+	.topper__title
+		font-size: 18px
+		text-transform: uppercase
+		color: $gray
+		@include text-shadow(0 2px 1px rgba(255,255,255,.32))
+		+ib
+	.topper__note
+		font-size: 18px
+		line-height: 1
+		color: $gray
+		+ibook
+		@include text-shadow(0 2px 1px rgba(255,255,255,.32))
+	.topper__addrtel
+		margin-bottom: 10px
+		font-size: 25px
+		color: $gray
+		@include text-shadow(0 2px 1px rgba(255,255,255,.32))
+		+ib
+	.topper__addrmail
+		font-size: 18px
+		color: $gray
+		@include text-shadow(0 2px 1px rgba(255,255,255,.32))
+		+ibook
+// Nav
+// --------------------------------------------------
+.navbar
+	border-bottom: 1px solid #fff
+	position: relative
+	z-index: 100
+	background: #F2F2F2
+	+g(#fff, #e6e6e6)
+	+box-shadow(0px 3px 20px #806550)
+	.navbar__in
+		@extend %in
+		+clr
+	.navbar__left
+		width: 220px
+		height: 98px
+		padding: 0 10px
+		float: left
+		position: relative
+	.navbar__right
+		width: 700px
+		padding: 0 10px
+		float: left
+
+.logo
+	position: absolute
+	bottom: 12px
+	left: 50%
+	margin-left: -79px
+	+hide-text
+	+s(logo)
+
+.nav
+	width: 100%
+	display: table
+	// border-spacing: 1px
+	ul
+		display: table-row
+	li
+		display: table-cell
+		height: 98px
+		line-height: 98px
+	a
+		display: block
+		text-align: center
+		color: $green
+		&:hover
+			text-decoration: none
+		&.is-active
+			color: $gray
+			text-decoration: none 
+
+.seconary-nav
+	border-radius: 5px
+	overflow: hidden
+	li
+	a
+		display: block
+		padding: 17px 0
+		+g(#ffffff, #f0f0f0)
+		border-bottom: 1px solid #ede4db 
+		font-size: 18px
+		line-height: 1.2 
+		text-align: center
+		text-decoration: none
+		color: $gray
+		+ib
+		&:hover
+			+g(#fff, #ffe1db)
+
+.search
+	padding: 22px 11px
+	.search__field
+		padding: 3px 4px
+		height: 18px
+		border-radius: 13px
+		border: 1px solid #fa624d
+	.search__btn
+		display: inline-block
+		vertical-align: middle
+		+s(i-glass)
+		+hide-text
+	.search__input
+		font-size: 14px
+		line-height: 18px
+		color: #FA624D
+		+placeholder
+			color: #FA624D
+		&:focus
+			+placeholder
+				color: transparent
+
+// sidebar
+// --------------------------------------------------
+.sidebar
+	background: #FFF
+	@include border-radius(5px)
+	@include box-shadow(0 3px 5px rgba(52,22,5,.85))
 
 // Footer
 // --------------------------------------------------
