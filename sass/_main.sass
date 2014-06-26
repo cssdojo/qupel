@@ -4,7 +4,7 @@
 // qupel
 // --------------------------------------------------
 .qupel
-	padding: 40px 0 
+	padding: 40px 0 50px
 	background: url("../img/sexy_bg.jpg")
 	+box-shadow(inset 0px -3px 20px #673812)
 	+cover
@@ -239,9 +239,13 @@
 			display: block
 
 .inshop
+	.title
+		margin-top: 2px
+		margin-bottom: 3px
+		padding-bottom: 7px
 	.inshop__in
 		overflow: hidden
-		padding: 25px 0 40px
+		padding: 25px 0
 	.inshop__row 
 		width: 100%
 		margin-left: -9px
@@ -284,6 +288,74 @@
 			text-decoration: none
 			&:hover
 				text-decoration: underline
+
+.slist
+	overflow: hidden
+	.title
+		margin-bottom: 20px
+	.slist__row
+		width: 100%
+		margin-left: -10px
+		display: table
+	ul
+		display: table-row
+	li
+		display: table-cell
+		width: 159px
+		border-left: 1px dotted orange
+	.slist__title
+		margin-bottom: 10px
+		padding: 0 9px 
+		color: $green
+		font-size: 18px
+		line-height: 1.2
+		+ib
+		a
+			color: $green
+			font-size: 18px
+			line-height: 1.2
+			+ib
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+	.slist__content
+		padding: 0 9px 
+		font-size: 12px
+		color: $gray
+
+.forus
+	padding: 50px 0 35px
+	background: url(../img/forus_bg.jpg) repeat
+	position: relative
+	&:after, &:before
+		content: ""
+		height: 25px
+		position: absolute
+		left: 0
+		right: 0
+	&:after
+		background: url(../img/shadow_t.png) repeat
+		top: 0
+	&:before
+		background: url(../img/shadow_b.png) repeat
+		bottom: 0
+	.forus__in
+		@extend %in
+		+clr
+	.forus__left
+		width: 460px
+		padding: 0 10px
+		float: left
+	.forus__right
+		width: 380px
+		padding: 0 10px
+		float: right
+	.forus__title
+	.forus__content
+		p
+
+		
+	
 
 
 

@@ -26,11 +26,11 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 @font-face { font-family: Intro_book; src: url("../fonts/Intro_book.eot"); src: url("../fonts/Intro_book.eot?#iefix") format("embedded-opentype"), url("../fonts/Intro_book.woff") format("woff"), url("../fonts/Intro_book.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-.topper .topper__in, .navbar .navbar__in, .l, .contentindex .contentindex__in { width: 960px; margin-left: auto; margin-right: auto; }
+.topper .topper__in, .navbar .navbar__in, .l, .contentindex .contentindex__in, .forus .forus__in { width: 960px; margin-left: auto; margin-right: auto; }
 
 body { min-width: 960px; background: whitesmoke; font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 
-.title { border-bottom: 4px double #fa624d; font-size: 24px; color: #fa624d; }
+.title { border-bottom: 4px double #fa624d; font-size: 24px; color: #fa624d; font-family: "Intro_bold", arial, sans-serif; }
 .title span { display: inline-block; }
 
 .topper { height: 89px; border-top: 1px solid #c2a588; background: url(../img/head_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
@@ -87,7 +87,7 @@ body { min-width: 960px; background: whitesmoke; font-size: 14px; font-family: A
 .l .l-page-mod { width: 620px; margin-left: 80px; padding: 0 10px; float: left; }
 .l .l-navbar { width: 140px; padding: 0 10px; float: left; }
 
-.qupel { padding: 40px 0; background: url("../img/sexy_bg.jpg"); -webkit-box-shadow: inset 0px -3px 20px #673812; -moz-box-shadow: inset 0px -3px 20px #673812; box-shadow: inset 0px -3px 20px #673812; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.qupel { padding: 40px 0 50px; background: url("../img/sexy_bg.jpg"); -webkit-box-shadow: inset 0px -3px 20px #673812; -moz-box-shadow: inset 0px -3px 20px #673812; box-shadow: inset 0px -3px 20px #673812; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
 .prod-i { margin-left: -15px; margin-bottom: 30px; font-size: 0; }
 
@@ -148,7 +148,8 @@ body { min-width: 960px; background: whitesmoke; font-size: 14px; font-family: A
 .tab .tab__content { padding: 12px; background: #fdf6ee; border-radius: 0 0 5px 5px; }
 .tab .tab__content img { display: block; }
 
-.inshop .inshop__in { overflow: hidden; padding: 25px 0 40px; }
+.inshop .title { margin-top: 2px; margin-bottom: 3px; padding-bottom: 7px; }
+.inshop .inshop__in { overflow: hidden; padding: 25px 0; }
 .inshop .inshop__row { width: 100%; margin-left: -9px; border-top: 1px dotted #fa624d; display: table; }
 .inshop .inshop__row:first-child { border-top: none; }
 .inshop .inshop__row:first-child li { padding-top: 0; }
@@ -161,3 +162,22 @@ body { min-width: 960px; background: whitesmoke; font-size: 14px; font-family: A
 .inshop .inshop__title { padding-bottom: 10px; font-size: 18px; line-height: 1; color: #24cf91; font-family: "Intro_bold", arial, sans-serif; }
 .inshop .inshop__title a { font-size: 18px; color: #24cf91; font-family: "Intro_bold", arial, sans-serif; text-decoration: none; }
 .inshop .inshop__title a:hover { text-decoration: underline; }
+
+.slist { overflow: hidden; }
+.slist .title { margin-bottom: 20px; }
+.slist .slist__row { width: 100%; margin-left: -10px; display: table; }
+.slist ul { display: table-row; }
+.slist li { display: table-cell; width: 159px; border-left: 1px dotted orange; }
+.slist .slist__title { margin-bottom: 10px; padding: 0 9px; color: #24cf91; font-size: 18px; line-height: 1.2; font-family: "Intro_bold", arial, sans-serif; }
+.slist .slist__title a { color: #24cf91; font-size: 18px; line-height: 1.2; font-family: "Intro_bold", arial, sans-serif; text-decoration: none; }
+.slist .slist__title a:hover { text-decoration: underline; }
+.slist .slist__content { padding: 0 9px; font-size: 12px; color: #7b3801; }
+
+.forus { padding: 50px 0 35px; background: url(../img/forus_bg.jpg) repeat; position: relative; }
+.forus:after, .forus:before { content: ""; height: 25px; position: absolute; left: 0; right: 0; }
+.forus:after { background: url(../img/shadow_t.png) repeat; top: 0; }
+.forus:before { background: url(../img/shadow_b.png) repeat; bottom: 0; }
+.forus .forus__in { *zoom: 1; }
+.forus .forus__in:after { content: " "; display: table; clear: both; }
+.forus .forus__left { width: 460px; padding: 0 10px; float: left; }
+.forus .forus__right { width: 380px; padding: 0 10px; float: right; }
