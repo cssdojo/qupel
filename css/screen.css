@@ -30,7 +30,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { min-width: 960px; background: #a15f29; font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 
-.out { width: 1280px; margin-left: auto; margin-right: auto; -webkit-box-shadow: 2px 2px 20px #67350c; -moz-box-shadow: 2px 2px 20px #67350c; box-shadow: 2px 2px 20px #67350c; }
+.out { max-width: 1280px; min-width: 960px; margin-left: auto; margin-right: auto; -webkit-box-shadow: 2px 2px 20px #67350c; -moz-box-shadow: 2px 2px 20px #67350c; box-shadow: 2px 2px 20px #67350c; }
 
 .title { border-bottom: 4px double #fa624d; font-size: 24px; color: #fa624d; font-family: "Intro_bold", arial, sans-serif; }
 .title span { display: inline-block; }
