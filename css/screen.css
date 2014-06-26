@@ -28,7 +28,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .topper .topper__in, .navbar .navbar__in, .footer .footer__in, .l, .contentindex .contentindex__in, .forus .forus__in { width: 960px; margin-left: auto; margin-right: auto; }
 
-body { min-width: 960px; background: whitesmoke; font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
+body { min-width: 960px; background: #a15f29; font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
+
+.out { width: 1280px; margin-left: auto; margin-right: auto; -webkit-box-shadow: 2px 2px 20px #67350c; -moz-box-shadow: 2px 2px 20px #67350c; box-shadow: 2px 2px 20px #67350c; }
 
 .title { border-bottom: 4px double #fa624d; font-size: 24px; color: #fa624d; font-family: "Intro_bold", arial, sans-serif; }
 .title span { display: inline-block; }
@@ -52,15 +54,16 @@ body { min-width: 960px; background: whitesmoke; font-size: 14px; font-family: A
 
 .logo { position: absolute; bottom: 12px; left: 50%; margin-left: -79px; font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-sf9206aa0be.png') 0 0 no-repeat; width: 158px; height: 157px; }
 
-.nav { width: 100%; display: table; }
-.nav ul { display: table-row; }
-.nav li { display: table-cell; height: 98px; line-height: 98px; }
-.nav a { display: block; text-align: center; color: #24cf91; }
+.nav ul { *zoom: 1; }
+.nav ul:after { content: " "; display: table; clear: both; }
+.nav li { height: 98px; line-height: 98px; float: left; }
+.nav li:first-child a { padding: 0 15px 0 0; }
+.nav a { padding: 0 15px; display: block; text-align: center; color: #24cf91; }
 .nav a:hover { text-decoration: none; }
 .nav a.is-active { color: #7b3801; text-decoration: none; }
 
 .seconary-nav { border-radius: 5px; overflow: hidden; }
-.seconary-nav a { display: block; padding: 17px 0; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f0f0f0)); background-image: -webkit-linear-gradient(#ffffff, #f0f0f0); background-image: -moz-linear-gradient(#ffffff, #f0f0f0); background-image: -o-linear-gradient(#ffffff, #f0f0f0); background-image: linear-gradient(#ffffff, #f0f0f0); border-bottom: 1px solid #ede4db; font-size: 18px; line-height: 1.2; text-align: center; text-decoration: none; color: #7b3801; font-family: "Intro_bold", arial, sans-serif; }
+.seconary-nav a { display: block; padding: 17px 0; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f0f0f0)); background-image: -webkit-linear-gradient(#ffffff, #f0f0f0); background-image: -moz-linear-gradient(#ffffff, #f0f0f0); background-image: -o-linear-gradient(#ffffff, #f0f0f0); background-image: linear-gradient(#ffffff, #f0f0f0); border-bottom: 1px solid #ede4db; font-size: 16px; line-height: 1.2; text-align: center; text-decoration: none; color: #7b3801; font-family: "Intro_bold", arial, sans-serif; }
 .seconary-nav a:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffe1db)); background-image: -webkit-linear-gradient(#ffffff, #ffe1db); background-image: -moz-linear-gradient(#ffffff, #ffe1db); background-image: -o-linear-gradient(#ffffff, #ffe1db); background-image: linear-gradient(#ffffff, #ffe1db); }
 
 .search { padding: 22px 11px; }
@@ -116,9 +119,9 @@ body { min-width: 960px; background: whitesmoke; font-size: 14px; font-family: A
 .sexy-img { width: 520px; height: 250px; line-height: 250px; margin: 0 10px; overflow: hidden; -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5); box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5); }
 .sexy-img img { width: 100%; }
 
-.btn { display: inline-block; padding: 5px 19px; border: 1px solid #ec5555; border-radius: 5px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fab658), color-stop(100%, #de5640)); background-image: -webkit-linear-gradient(#fab658, #de5640); background-image: -moz-linear-gradient(#fab658, #de5640); background-image: -o-linear-gradient(#fab658, #de5640); background-image: linear-gradient(#fab658, #de5640); -webkit-box-shadow: 0px 2px 0 #ec5555; -moz-box-shadow: 0px 2px 0 #ec5555; box-shadow: 0px 2px 0 #ec5555; font-size: 14px; font-family: "Intro_boldCaps", arial, sans-serif; text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.15); text-transform: uppercase; text-decoration: none; color: white; }
-.btn:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #de5640), color-stop(100%, #fab658)); background-image: -webkit-linear-gradient(#de5640, #fab658); background-image: -moz-linear-gradient(#de5640, #fab658); background-image: -o-linear-gradient(#de5640, #fab658); background-image: linear-gradient(#de5640, #fab658); -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
-.btn:active { position: relative; top: 1px; }
+.btn { display: inline-block; padding: 6px 19px; border: 1px solid #d74040; -webkit-box-shadow: 0 2px 0 #d74040; -moz-box-shadow: 0 2px 0 #d74040; box-shadow: 0 2px 0 #d74040; border-radius: 5px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fab658), color-stop(100%, #de5640)); background-image: -webkit-linear-gradient(#fab658, #de5640); background-image: -moz-linear-gradient(#fab658, #de5640); background-image: -o-linear-gradient(#fab658, #de5640); background-image: linear-gradient(#fab658, #de5640); font-size: 14px; font-family: "Intro_boldCaps", arial, sans-serif; text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.15); text-transform: uppercase; text-decoration: none; color: white; }
+.btn:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #faeb58), color-stop(100%, #de8540)); background-image: -webkit-linear-gradient(#faeb58, #de8540); background-image: -moz-linear-gradient(#faeb58, #de8540); background-image: -o-linear-gradient(#faeb58, #de8540); background-image: linear-gradient(#faeb58, #de8540); }
+.btn:active { position: relative; top: 2px; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 
 .basket { background-color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 3px 5px rgba(52, 22, 5, 0.85); -moz-box-shadow: 0 3px 5px rgba(52, 22, 5, 0.85); box-shadow: 0 3px 5px rgba(52, 22, 5, 0.85); }
 .basket .basket__top { background: #fa624d; -webkit-border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0; -ms-border-radius: 5px 5px 0 0; -o-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; color: white; text-align: center; font-family: "Intro_bold", arial, sans-serif; position: relative; }

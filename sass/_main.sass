@@ -65,11 +65,11 @@
 
 .btn
 	display: inline-block
-	padding: 5px 19px
-	border: 1px solid #ec5555
+	padding: 6px 19px
+	border: 1px solid #d74040
+	+box-shadow(0 2px 0 #d74040)
 	border-radius: 5px
 	+g(#fab658, #de5640)
-	+box-shadow(0px 2px 0 #ec5555)
 	font-size: 14px
 	+ibc
 	@include text-shadow(0 -1px 0px rgba(#000, .15))
@@ -77,11 +77,11 @@
 	text-decoration: none
 	color: #fff
 	&:hover
-		+g(#de5640, #fab658)
-		+box-shadow(none)
+		+g(#faeb58, #de8540)
 	&:active
 		position: relative
-		top: 1px
+		top: 2px
+		+box-shadow(none)
 
 .basket
 	background-color: #fff
