@@ -189,19 +189,47 @@ body
 
 // Footer
 // --------------------------------------------------
-.footer 
+.footer
+	padding: 16px 0 40px
+	background: url("../img/footer_bg.jpg") repeat
+	+cover
+	color: $gray
 	.footer__in
 		@extend %in
+		+clr
+		position: relative
 	.footer__left
+		width: 220px
+		padding: 0 10px
+		float: left
 	.footer__center
+		width: 460px
+		padding: 0 10px
+		float: left
 		p
-	.footer__right 
+			margin-bottom: 11px
+			font-size: 11px
+	.footer__right
+		width: 220px
+		padding: 0 10px
+		float: left
 	.footer__title
+		margin-bottom: 4px
+		font-weight: bold
 	.footer__list
 		li
-	.footer__mail
+			margin-bottom: 6px
 	.footer__dev
+		width: 210px
+		position: absolute
+		bottom: -30px
+		right: 20px
 		.footer__devlink
+			font-weight: bold
+			color: $gray
+			text-decoration: underline
+			&:hover
+				text-decoration: none
 		.footer__devname
 
 	
