@@ -45,6 +45,7 @@ body { min-width: 960px; background: #a15f29; font-size: 14px; font-family: Aria
 .topper .topper__note { font-size: 18px; line-height: 1; color: #7b3801; font-family: "Intro_book", arial, sans-serif; text-shadow: 0 2px 1px rgba(255, 255, 255, 0.32); }
 .topper .topper__addrtel { margin-bottom: 10px; font-size: 25px; color: #7b3801; text-shadow: 0 2px 1px rgba(255, 255, 255, 0.32); font-family: "Intro_bold", arial, sans-serif; }
 .topper .topper__addrmail { font-size: 18px; color: #7b3801; text-shadow: 0 2px 1px rgba(255, 255, 255, 0.32); font-family: "Intro_book", arial, sans-serif; }
+.topper .topper__addrmail a { font-size: 18px; color: #7b3801; text-shadow: 0 2px 1px rgba(255, 255, 255, 0.32); font-family: "Intro_book", arial, sans-serif; text-decoration: none; }
 
 .navbar { border-bottom: 1px solid white; position: relative; z-index: 100; background: #f2f2f2; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6)); background-image: -webkit-linear-gradient(#ffffff, #e6e6e6); background-image: -moz-linear-gradient(#ffffff, #e6e6e6); background-image: -o-linear-gradient(#ffffff, #e6e6e6); background-image: linear-gradient(#ffffff, #e6e6e6); -webkit-box-shadow: 0px 3px 20px #806550; -moz-box-shadow: 0px 3px 20px #806550; box-shadow: 0px 3px 20px #806550; }
 .navbar .navbar__in { *zoom: 1; }
