@@ -84,6 +84,7 @@ body { min-width: 960px; background: #a15f29; font-size: 14px; font-family: Aria
 .sidebar { background: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 3px 5px rgba(52, 22, 5, 0.85); -moz-box-shadow: 0 3px 5px rgba(52, 22, 5, 0.85); box-shadow: 0 3px 5px rgba(52, 22, 5, 0.85); }
 
 .footer { padding: 16px 0 40px; background: url("../img/footer_bg.jpg") repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; color: #7b3801; }
+.footer a { font-size: 14px; color: #7b3801; text-decoration: none; }
 .footer .footer__in { *zoom: 1; position: relative; }
 .footer .footer__in:after { content: " "; display: table; clear: both; }
 .footer .footer__left { width: 220px; padding: 0 10px; float: left; }
