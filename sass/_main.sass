@@ -48,7 +48,7 @@
 			vertical-align: top
 	.prod__descr
 		padding: 10px 10px 13px
-		background: #24CF91
+		background: $green
 		text-align: center
 		span
 			display: inline-block
@@ -57,6 +57,64 @@
 			font-size: 16px
 			line-height: 1.2
 			color: #FFF
+
+.product-i
+
+.product
+	margin-bottom: 15px
+	@include border-radius(5px)
+	@include box-shadow(0 3px 5px rgba(52,22,5,.85))
+	background: #FFF
+	display: table
+	.product__left
+		width: 390px
+		padding: 5px
+		display: table-cell
+		+clr
+	.product__right
+		width: 140px
+		display: table-cell
+		vertical-align: middle
+		text-align: center
+		background: $green
+		border-radius: 0 5px 5px 0
+	.product__img
+		width: 120px
+		height: 120px
+		line-height: 120px
+		margin-right: 10px
+		float: left
+		overflow: hidden
+		text-align: center
+		&:hover
+			+opacity(0.8)
+	.product__desc
+		overflow: hidden
+		font-size: 12px
+		line-height: 1.4 
+		color: $gray
+	.product__title
+		margin-bottom: 5px
+		font-size: 16px
+		font-weight: bold
+		color: $gray
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+		a
+			color: $gray
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+	.product__price
+		margin-bottom: 10px
+		font-size: 24px
+		font-weight: bold
+		color: #FFF 
+
+		
+
+	
 
 .sexy-img
 	width: 520px
@@ -186,7 +244,7 @@
 				height: 6px
 				margin-right: 12px
 				border-radius: 50%
-				background: #24cf91 
+				background: $green 
 				display: inline-block
 			&:hover
 				text-decoration: none
@@ -276,7 +334,7 @@
 		height: 134px
 		margin-bottom: 10px
 		overflow: hidden
-		border: 3px solid #24cf91
+		border: 3px solid $green
 		border-radius: 5px
 		&:hover
 			+opacity(0.8)
