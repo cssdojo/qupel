@@ -124,8 +124,8 @@ body { min-width: 960px; background: #a15f29; font-size: 14px; font-family: Aria
 .qupel { padding: 40px 0 50px; background: url("../img/sexy_bg.jpg"); -webkit-box-shadow: inset 0px -3px 20px #673812; -moz-box-shadow: inset 0px -3px 20px #673812; box-shadow: inset 0px -3px 20px #673812; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
 .texture { padding: 40px 0 50px; position: relative; }
-.texture:before { content: ""; width: 100%; background: url("../img/texture2.jpg") repeat; position: absolute; top: 918px; bottom: 0; left: 0; z-index: -1; }
-.texture:after { content: ""; width: 1280px; height: 727px; padding: 40px 0 50px; background: url("../img/texture.jpg") no-repeat; position: absolute; top: 191px; z-index: -1; }
+.texture:before { content: ""; width: 100%; background: url("../img/texture2.jpg") repeat; position: absolute; top: 727px; bottom: 0; left: 0; z-index: -1; }
+.texture:after { content: ""; width: 1280px; height: 727px; background: url("../img/texture.jpg") no-repeat; position: absolute; top: 0px; z-index: -1; }
 
 .prod-i { margin-left: -15px; margin-bottom: 30px; font-size: 0; }
 
