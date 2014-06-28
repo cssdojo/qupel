@@ -11,8 +11,25 @@
 
 .texture
 	padding: 40px 0 50px
-	background: url("../img/texture.jpg")
-	+cover
+	position: relative
+	&:before
+		content: ""
+		width: 100%
+		background: url("../img/texture2.jpg") repeat
+		position: absolute
+		top: 918px
+		bottom: 0
+		left: 0
+		z-index: -1
+	&:after
+		content: ""
+		width: 1280px
+		height: 727px
+		padding: 40px 0 50px
+		background: url("../img/texture.jpg") no-repeat
+		position: absolute
+		top: 191px
+		z-index: -1
 
 .prod-i
 	margin-left: -15px
