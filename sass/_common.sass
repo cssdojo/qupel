@@ -153,23 +153,44 @@ body
 			color: $gray
 			text-decoration: none 
 
+.dropnav
+	display: none
+	padding: 15px 20px
+	background: #CD866A
+	text-align: center
+	li
+		margin-bottom: 10px
+		a
+			font-size: 16px
+			+ib
+			color: #FFF
+			text-decoration: underline 
+			&:hover
+				color: #900F04 
+				text-decoration: none
+
 .seconary-nav
 	border-radius: 5px
 	overflow: hidden
-	li
-	a
-		display: block
-		padding: 17px 0
-		+g(#ffffff, #f0f0f0)
-		border-bottom: 1px solid #ede4db 
-		font-size: 16px
-		line-height: 1.2 
-		text-align: center
-		text-decoration: none
-		color: $gray
-		+ib
-		&:hover
-			+g(#fff, #ffe1db)
+	& > li
+		&.is-drop
+			& > a
+				color: $orange 
+			.dropnav
+				display: block
+		& > a
+			display: block
+			padding: 17px 0
+			+g(#ffffff, #f0f0f0)
+			border-bottom: 1px solid #ede4db 
+			font-size: 16px
+			line-height: 1.2 
+			text-align: center
+			text-decoration: none
+			color: $gray
+			+ib
+			&:hover
+				+g(#fff, #ffe1db)
 
 .search
 	padding: 22px 11px
@@ -193,6 +214,29 @@ body
 			+placeholder
 				color: transparent
 
+.breadcrumbs
+	margin-bottom: 10px
+	+clr
+	li
+		float: left
+		margin-left: 27px
+		&:first-child
+			margin-left: 0
+			a
+				&:before
+					content: none
+	a
+		font-size: 18px
+		color: $gray
+		position: relative
+		&:hover
+			text-decoration: none
+		&:before
+			content: ""
+			+s(i-dash)
+			position: absolute
+			top: 11px
+			left: -23px
 // sidebar
 // --------------------------------------------------
 .sidebar

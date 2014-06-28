@@ -9,6 +9,11 @@
 	+box-shadow(inset 0px -3px 20px #673812)
 	+cover
 
+.texture
+	padding: 40px 0 50px
+	background: url("../img/texture.jpg")
+	+cover
+
 .prod-i
 	margin-left: -15px
 	margin-bottom: 30px
@@ -436,7 +441,45 @@
 			bottom: 0
 			+arr(20,14,#fff,bottom-right)
 
-	
+.size
+	margin-bottom: 20px
+	padding: 15px
+	background: rgba(#000, .5)
+	font-size: 14px
+	color: #FFF
+	.size__row
+		margin-bottom: 3px
+	.size__meta
+		display: inline-block
+		margin-right: 5px
+		margin-bottom: 5px
+		font-weight: bold
+	.size__filter
+		display: inline-block
+		margin-right: 5px
+		margin-bottom: 5px
+		text-decoration: underline
+		cursor: pointer
+		&:hover
+			text-decoration: none
+	.size__pagi
+		+clr
+		li
+			float: left
+		a
+			display: block
+			width: 18px
+			height: 17px
+			border: 1px solid transparent
+			text-align: center
+			color: #FFF
+			text-decoration: none
+			&.is-active
+				border-color: #FFF
+		.size__pagiprev, .size__paginext 
+			margin-top: -2px
+		
+
 	
 
 
