@@ -108,7 +108,7 @@ body { min-width: 960px; background: #a15f29; font-size: 14px; font-family: Aria
 
 .breadcrumbs { margin-bottom: 10px; *zoom: 1; }
 .breadcrumbs:after { content: " "; display: table; clear: both; }
-.breadcrumbs li { float: left; margin-left: 27px; }
+.breadcrumbs li { display: inline; margin-left: 27px; }
 .breadcrumbs li:first-child { margin-left: 0; }
 .breadcrumbs li:first-child a:before { content: none; }
 .breadcrumbs a { font-size: 18px; color: #7b3801; position: relative; }
