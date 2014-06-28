@@ -149,6 +149,13 @@ body { min-width: 960px; background: #a15f29; font-size: 14px; font-family: Aria
 .product .product__title a:hover { text-decoration: underline; }
 .product .product__price { margin-bottom: 10px; font-size: 24px; font-weight: bold; color: white; }
 
+.pagi { padding: 15px 20px; background: rgba(24, 0, 0, 0.5); }
+.pagi ul { *zoom: 1; }
+.pagi ul:after { content: " "; display: table; clear: both; }
+.pagi li { float: left; }
+.pagi a { display: block; width: 19px; height: 17px; line-height: 17px; border: 1px solid transparent; text-align: center; text-decoration: none; color: white; }
+.pagi a.is-active { border-color: white; }
+
 .sexy-img { width: 520px; height: 250px; line-height: 250px; margin: 0 10px; overflow: hidden; -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5); box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5); }
 .sexy-img img { width: 100%; }
 
