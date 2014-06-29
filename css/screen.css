@@ -131,6 +131,10 @@ body { min-width: 960px; background: #a15f29; font-size: 14px; font-family: Aria
 .footer .footer__dev .footer__devlink { font-weight: bold; color: #7b3801; text-decoration: underline; }
 .footer .footer__dev .footer__devlink:hover { text-decoration: none; }
 
+.price { font-family: "PT Sans", serif; }
+
+.price_bold { font-family: "PT Sans", serif; font-weight: bold; }
+
 /* fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp { padding: 0; margin: 0; border: 0; outline: none; vertical-align: top; }
 
@@ -246,6 +250,7 @@ body { min-width: 960px; background: #a15f29; font-size: 14px; font-family: Aria
 .product .product__title a { color: #7b3801; text-decoration: none; }
 .product .product__title a:hover { text-decoration: underline; }
 .product .product__price { margin-bottom: 10px; font-size: 24px; font-weight: bold; color: white; }
+.product .product__price sup { font-size: 16px; vertical-align: top; }
 
 .pagi { padding: 15px 20px; background: rgba(24, 0, 0, 0.5); }
 .pagi ul { *zoom: 1; }
@@ -463,4 +468,5 @@ ul.flexslider__slides li:before { content: none; }
 .table .table__itemdescr { width: 160px; display: table-cell; vertical-align: middle; }
 .table .table__itemdescr a { margin-right: 5px; }
 .table .table__itemdescr span { font-weight: bold; }
+.table .table__itemdescr span sup { font-size: 13px; }
 .table .table__itembtn { text-align: right; display: table-cell; vertical-align: middle; }
