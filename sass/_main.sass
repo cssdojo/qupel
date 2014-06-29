@@ -677,23 +677,6 @@ a.btn
 		vertical-align: middle
 		text-align: center
 		background: $green
-	.item__caro
-		+clr
-		border-top: 1px solid #ede4db 
-		border-bottom: 1px solid #ede4db 
-		border-left: 1px solid #ede4db 
-	.item__carounit
-		width: 75px
-		height: 50px
-		float: left
-		overflow: hidden
-		border-left: 1px solid #ede4db
-		&:first-child
-			border-left: none 
-		img
-			max-width: 100%
-			&:hover
-				+opacity(0.8)
 
 .item-descr 
 	+clr
@@ -733,6 +716,32 @@ a.btn
 		display: inline-block
 		vertical-align: top
 		font-size: 21px
+		
+ul.flexslider__slides 
+	li
+		padding-left: 0
+		&:before
+			content: none
+
+.flexslider__control-nav
+	+clr
+	border-top: 1px solid #ede4db 
+	border-bottom: 1px solid #ede4db 
+	li
+		width: 75px
+		height: 50px
+		float: left
+		overflow: hidden
+		border-right: 1px solid #ede4db
+		cursor: pointer
+		img
+			max-width: 100%
+			&:hover
+				+opacity(0.8)
+
+.flexslider .flexslider__slides a, .flexslider .flexslider__slides img
+	display: block
+
 	
 	
 

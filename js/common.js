@@ -1,4 +1,5 @@
 head.ready(function() {
+
 	// height
 	function height(){
 	  var getheight = $('.js-getHeight').height();
@@ -28,5 +29,26 @@ head.ready(function() {
   		});
   		});
   } tab();
+
+  $('.fancybox').fancybox({
+    prevEffect    : 'none',
+    nextEffect    : 'none',
+    padding: 0,
+      helpers: {
+        overlay: {
+          locked: false
+        }
+      }
+  });
+
+  $('.flexslider').flexslider({
+    animation: "slide",
+    slideshow: false,
+    controlNav: "thumbnails",
+    manualControls: "flexslider__control-thumbs",
+    directionNav: false,
+    namespace: "flexslider__",
+    selector: ".flexslider__slides > .flexslider__item",
+  });
 
 });
