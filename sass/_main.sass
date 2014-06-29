@@ -677,6 +677,23 @@ a.btn
 		vertical-align: middle
 		text-align: center
 		background: $green
+	.item__caro
+		+clr
+		border-top: 1px solid #ede4db 
+		border-bottom: 1px solid #ede4db 
+		border-left: 1px solid #ede4db 
+	.item__carounit
+		width: 75px
+		height: 50px
+		float: left
+		overflow: hidden
+		border-left: 1px solid #ede4db
+		&:first-child
+			border-left: none 
+		img
+			max-width: 100%
+			&:hover
+				+opacity(0.8)
 
 .item-descr 
 	+clr
