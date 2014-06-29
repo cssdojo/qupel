@@ -194,6 +194,10 @@ a.btn
 .btn_small
 	padding: 7px 6px 5px
 	font-size: 12px
+	
+.btn_smaller
+	padding: 4px 9px 2px
+	font-size: 9px
 
 .basket
 	background-color: #fff
@@ -741,6 +745,80 @@ ul.flexslider__slides
 
 .flexslider .flexslider__slides a, .flexslider .flexslider__slides img
 	display: block
+
+.tab-content
+	.tab__nav
+		border-bottom: 1px solid #ede4db 
+		+clr
+		li
+			border: 1px solid #ede4db
+			border-color: transparent 
+			border-radius: 3px 3px 0 0
+			padding-left: 0
+			float: left
+			position: relative
+			&:before
+				content: none
+			&.is-active
+				border-color: #ede4db
+				&:after
+					content: ""
+					height: 2px
+					background: #fff 
+					position: absolute
+					bottom: -2px
+					left: 0
+					right: 0
+					
+				a
+					font-weight: bold
+					color: $gray
+					text-decoration: none 
+		a
+			padding: 0 15px
+			font-size: 12px
+	.tab__content
+		padding: 25px 0
+		font-size: 12px
+	.tab__item
+
+.table
+	margin-top: 15px
+	+clr
+	h2
+		padding-bottom: 5px
+		border-bottom: 1px solid #ede4db
+	.table__section
+		margin-bottom: 25px
+	.table__left
+		width: 240px
+		margin-right: 20px
+		float: left
+	.table__right 
+		width: 240px
+		float: left
+	.table__item
+		width: 100%
+		min-height: 76px
+		display: table
+		border-bottom: 1px solid #ede4db
+	.table__itemdescr
+		width: 160px
+		display: table-cell
+		vertical-align: middle
+		a
+			margin-right: 5px
+		span
+			font-weight: bold
+	.table__itembtn
+		text-align: right
+		display: table-cell
+		vertical-align: middle
+
+
+
+	
+	
 
 	
 	
